@@ -49,6 +49,8 @@ else
 	echo 'eksctl already installed'
 fi
 
+aws sts get-caller-identity
+
 # kubectx/kubens
 if ! type kubectx >/dev/null 2>&1; then
 	git clone https://github.com/ahmetb/kubectx /opt/kubectx
